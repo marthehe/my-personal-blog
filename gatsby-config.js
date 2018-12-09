@@ -18,6 +18,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-130697220-1',
+        head: false,
+        anonymize: true,
+        exclude: ['/preview/**'],
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
